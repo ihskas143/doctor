@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+   
 </head>
 
 <body>
@@ -53,7 +54,7 @@
                                 </div>
                             </div>
                             <div class="col-1">
-                                <img src="images/logo.png" alt="logo" width="35" height="35">
+                                <img src="images/uk.jpg" alt="logo" width="35" height="35">
                                 <div style="margin-left: 10px;">
                                     
                                 </div>
@@ -86,12 +87,10 @@
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Request A Quote</a></li>
                     </ul>
-                    <div class="btn-primary" style=" display: flex; align-items: center;align-content: center;">
-                        <img  src="images/search.png" style="max-width: 20px;">
-                        <input type="text" name="search" onkeyup="processChange()" id="search_bar"
-                         autocomplete="off" style=" background: none; border: none; padding-left: 10px; " class="search-bar" placeholder="Search">
-                        <!-- <a href="#" class="btn-primary">Enquire Now</a> -->
-                    </div>
+                    <div class="navbar-search">
+                        <input type="text" placeholder="Search" />
+                        <button>Search</button>
+                      </div>
                 </div>
             </nav>
         </header>
@@ -145,8 +144,8 @@
                     </div>
                     
                 </div>
-                <hr class="custom-hr">
             </div>
+            <hr class="custom-hr">
         </section>
 
         <section id="eligibility">
@@ -167,7 +166,18 @@
                         <hr class="custom-hrs">
                     </div>
                     
-                    <div></div>
+                    <div class="form-section">
+                        <h3>Need Help?</h3>
+                        <p>Just let us know. We will be happy to assist you.</p>
+                        <input type="text" placeholder="Full Name" />
+                        <input type="email" placeholder="Email" />
+                        <input type="tel" placeholder="Phone Number" />
+                        <textarea
+                          placeholder="Describe Your Treatment Requirement"
+                        ></textarea>
+                        <button>Send Enquiry</button>
+                      </div>
+                    </div>
                 
                 </div>
             </div>
@@ -272,7 +282,7 @@
                         <h2>Treatment FAQs<span class="dot">.</span></h2>
                        
                         
-                       <ul>  <hr class="custom-hrs"><li>The BMI (body mass index) is 40 or more</li>
+                       <ul>  <hr class="custom-hrs-solid"><li>The BMI (body mass index) is 40 or more</li>
                         <li >Your BMI is 30 or more with severe weight-related health conditions like type-2 diabetes and high blood pressure</li>
                         <li>You are willing to make permanent changes in the lifestyle</li></ul>
                         <hr class="custom-hrs">
@@ -282,118 +292,262 @@
                 </div>
             </div>
         </section>
+        
 
-        <section id="stories">
-            <div class="container4">
-                <div class="rows">
-                    <div class="col-lefts">
-                        <h2>Patient Stories & Videos<span class="dot">.</span></h2>
-                        <p>Lorem incididunt ut labore ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                        
-                    </div>
-                    
-                    <div><hr class="hr"></div>
+        <section class="patient-stories">
+            <h2>Patient Stories & Videos.</h2>
+            <div class="story-cards">
+              <!-- Story Card 1 -->
+              <div class="story-card">
+                <h3>Underwent procedure for retinal detachment</h3>
+                <div class="card-image">
+                  <img
+                    src="images/patient1.jpg"
+                    alt="Patient undergoing surgery"
+                  />
+                  <div class="play-icon">
+                    <i class="fas fa-play"></i>
+                  </div>
                 </div>
-            </div>
-        </section>
-
-
-        <!-- Slider Section -->
-        <section id="slider">
-            <div class="container">
-                <div class="owl-carousel">
-                    <div class="item">
-                        <h3>Patient Story 1</h3>
-                        <img data-src="dummy-image1.jpg" class="lazyload" alt="Patient Story 1">
-                    </div>
-                    <div class="item">
-                        <h3>Patient Story 2</h3>
-                        <img data-src="dummy-image2.jpg" class="lazyload" alt="Patient Story 2">
-                    </div>
+                <div class="card-info">
+                  <img
+                    class="quote-icon"
+                    src="images/patient2.png"
+                    alt="Quote icon"
+                  />
+                  <p>Luke Olfert</p>
+                  <span>New York, USA</span>
                 </div>
+              </div>
+      
+              <!-- Story Card 2 -->
+              <div class="story-card">
+                <h3>Underwent Colonoscopy and Medical Management</h3>
+                <div class="card-image">
+                  <img
+                    src="images/patient1.jpg"
+                    alt="Colonoscopy Patient"
+                  />
+                </div>
+                <div class="card-info">
+                  <img
+                    class="quote-icon"
+                    src="images/patient2.png"
+                    alt="Quote icon"
+                  />
+                  <p>Luke Olfert</p>
+                  <span>Sydney, Australia</span>
+                </div>
+              </div>
             </div>
-        </section>
+      
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+            </div>
+          </section>
+          <section class="top-doctors">
+            <h4 class="section-subtitle">Doctors</h4>
+            <h2 class="section-title">Top Orthopaedic <span>Doctors</span></h2>
+      
+            <div class="doctor-cards">
+              <!-- Doctor Card 1 -->
+              <div class="doctor-card">
+                <div class="doctor-image">
+                  <img src="images/falke.jpg" alt="Doctor Image" />
+                </div>
+                <div class="doctor-info">
+                  <p class="doctor-name">Dr. Anjali Giri</p>
+                  <p class="doctor-location">Musaffah Industrial - Abu Dhabi</p>
+                  <p class="doctor-degree">Doctor Degree & Specialist</p>
+                </div>
+              </div>
+      
+              <!-- Doctor Card 2 -->
+              <div class="doctor-card">
+                <div class="doctor-image">
+                  <img src="images/cardiac.jpg" alt="Doctor Image" />
+                </div>
+                <div class="doctor-info">
+                  <p class="doctor-name">Dr. Sakshi Singh</p>
+                  <p class="doctor-location"> Industrial - Abu Dhabi</p>
+                  <p class="doctor-degree">Doctor Degree & Specialist</p>
+                </div>
+              </div>
+      
+              <!-- Doctor Card 3 -->
+              <div class="doctor-card">
+                <div class="doctor-image">
+                  <img src="images/drvitro.jpg" alt="Doctor Image" />
+                </div>
+                <div class="doctor-info">
+                  <p class="doctor-name">Dr. Uddeshya  Falke</p>
+                  <p class="doctor-location">Musaffah Industrial - Abu Dhabi</p>
+                  <p class="doctor-degree">Doctor Degree & Specialist</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </section>
+        <section class="recommended-hospitals">
+            <h4 class="section-subtitle">Hospitals</h4>
+            <h2 class="section-title">Recommended <span>Hospitals</span></h2>
+      
+            <div class="hospital-cards">
+              <!-- Hospital Card 1 -->
+              <div class="hospital-card">
+                <img
+                  src="images/kokilaben.jpg"
+                  alt="Apollo Hospital"
+                />
+                <div class="hospital-info">
+                  <p class="hospital-name">Apollo Hospital</p>
+                  <p class="hospital-location">Bangalore</p>
+                </div>
+              </div>
+      
+              <!-- Hospital Card 2 -->
+              <div class="hospital-card">
+                <img
+                  src="images/seven.jpg"
+                  alt="Medanta Hospital"
+                />
+                <div class="hospital-info">
+                  <p class="hospital-name">Medanta Hospital</p>
+                  <p class="hospital-location">Gurgaon</p>
+                </div>
+              </div>
+      
+              <!-- Hospital Card 3 -->
+              <div class="hospital-card">
+                <img
+                  src="images/nanavati.jpg"
+                  alt="Jaslok Hospital"
+                />
+                <div class="hospital-info">
+                  <p class="hospital-name">Jaslok Hospital</p>
+                  <p class="hospital-location">Mumbai</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+      
+            <!-- Explore All Hospitals -->
+            <p class="explore-hospitals">
+              Don’t hesitate, contact us for better help and services.
+              <a href="#">Explore all Hospitals</a>
+            </p>
+          </section>
 
-        <!-- Footer -->
+
+        <!-- Footer Upper Section -->
+    <div class="footer-upper">
+        <h2>Stay healthy and strong to enjoy life</h2>
+        <h1>We have team of healthcare experts</h1>
+        <div class="cta-section">
+          <a href="#" class="cta-button">Get In Touch</a>
+          <div class="separator"></div>
+          <div class="footer-phone">+91 898 777 9999</div>
+        </div>
+      </div> <!-- Footer -->
        <!-- Footer Section -->
-<footer id="main-footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-columns">
-                <div class="footer-column">
-                    <h3>Important Links</h3>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Top Hospitals</h3>
-                    <ul>
-                        <li><a href="#">Apollo Hospital Delhi</a></li>
-                        <li><a href="#">Medanta Hospital Gurgaon</a></li>
-                        <li><a href="#">Max Hospital Delhi</a></li>
-                        <li><a href="#">Jaslok Hospital Mumbai</a></li>
-                        <li><a href="#">Fortis Hospital Gurgaon</a></li>
-                        <li><a href="#">View All</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Specialty Treatments</h3>
-                    <ul>
-                        <li><a href="#">Knee Replacement Surgeon</a></li>
-                        <li><a href="#">Urologist</a></li>
-                        <li><a href="#">Spine Surgeon</a></li>
-                        <li><a href="#">ENT Surgeons</a></li>
-                        <li><a href="#">Orthopedic</a></li>
-                        <li><a href="#">Cardiologist</a></li>
-                        <li><a href="#">View All</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Medical Tourism Destinations</h3>
-                    <ul>
-                        <li><a href="#">Medical Tourism in India</a></li>
-                        <li><a href="#">Medical Tourism in Sri Lanka</a></li>
-                        <li><a href="#">Medical Tourism in UAE</a></li>
-                        <li><a href="#">View All</a></li>
-                    </ul>
+        <footer id="main-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-columns">
+                        <div class="footer-column">
+                            <h3>Important Links</h3>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Top Hospitals</h3>
+                            <ul>
+                                <li><a href="#">Apollo Hospital Delhi</a></li>
+                                <li><a href="#">Medanta Hospital Gurgaon</a></li>
+                                <li><a href="#">Max Hospital Delhi</a></li>
+                                <li><a href="#">Jaslok Hospital Mumbai</a></li>
+                                <li><a href="#">Artemis hospital Gurgaon</a></li>
+                                <li><a href="#">Fortis Hospital Gurgaon</a></li>
+                                <li><a href="#">View All</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Specialty Treatments</h3>
+                            <ul>
+                                <li><a href="#">Knee Replacement Surgeon</a></li>
+                                <li><a href="#">Urologist</a></li>
+                                <li><a href="#">Spine Surgeon</a></li>
+                                <li><a href="#">ENT Surgeons</a></li>
+                                <li><a href="#">Orthopedic</a></li>
+                                <li><a href="#">Cardiologist</a></li>
+                                <li><a href="#">View All</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Medical Tourism Destinations</h3>
+                            <ul>
+                                <li><a href="#">Medical Tourism in India</a></li>
+                                <li><a href="#">Medical Tourism in Sri Lanka</a></li>
+                                <li><a href="#">Medical Tourism in UAE</a></li>
+                                <li><a href="#">View All</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="custom-hrss">
+
+                    <div class="footer-bottom">
+                        <div class="footer-logo">
+                            <img src="images/footer-logo.png" alt="Aafiya Meditreats Logo">
+                        </div>
+                        <div class="about-footer">
+                            <h3>About Aafiya Meditreats</h3>
+                            <p>Aafiya Mediretreats is a medical tourism company that provides healthcare services for patients at top hospitals in UAE, Sri Lanka, and India. Our goal is to make the process of finding the right kind of treatment easy for patients. We believe in providing the best quality service and making the right treatment available to patients at the right time.</p>
+                        </div>
+                        <div class="follow-us">
+                            <h3>Follow Us On</h3>
+                            <div class="social-links">
+                                <a href="#"><img src="images/f.png" alt="Facebook"></a>
+                                <a href="#"><img src="images/t.png" alt="Twitter"></a>
+                                <a href="#"><img src="images/i.png" alt="Instagram"></a>
+                                <a href="#"><img src="images/y.png" alt="YouTube"></a>
+                            </div>
+                            <div class="contact-footer">
+                                <p>Customer Service</p>
+                                <a href="tel:+919856555666">+91 9856555666</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <div class="footer-logo">
-                    <img src="logo-footer.png" alt="Aafiya Meditreats Logo">
-                </div>
-                <div class="about-footer">
-                    <h3>About Aafiya Meditreats</h3>
-                    <p>Aafiya Meditreats is a free, confidential, independent resource for patients and industry providers. Our mission is to provide a central portal where patients, Medical Tourism providers, hospitals, clinics, employers, and insurance companies can find the information they need.</p>
-                </div>
-                <div class="follow-us">
-                    <h3>Follow Us On</h3>
-                    <div class="social-links">
-                        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-                        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-                        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-                        <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
-                    </div>
-                    <div class="contact-footer">
-                        <p>Customer Service</p>
-                        <a href="tel:+919856555666">+91 9856555666</a>
+            <div class="footer-copyright">
+                <div class="containers">
+                    <p>Copyright © 2024 Aafiya Meditreats. All Rights Reserved. Designed by Ideamagix. </p>
+                    <div class="flexs">
+                        <a href="#">Terms And Conditions </a>  
+                        <a href="#"> Privacy Policy</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="footer-copyright">
-        <div class="container">
-            <p>© 2024 Aafiya Meditreats | All Rights Reserved. <a href="#">Terms And Conditions</a> | <a href="#">Privacy Policy</a></p>
-        </div>
-    </div>
-</footer>
+        </footer>
 
     </div>
 
@@ -401,6 +555,161 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.11/jquery.lazy.min.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- JavaScript for Tab Functionality -->
+    <script>
+        // JavaScript for tab functionality
+        const tabs = document.querySelectorAll(".tabs a");
+        const overviewContent = document.getElementById("overview-content");
+  
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", function () {
+            // Remove active class from all tabs
+            tabs.forEach((t) => t.classList.remove("active"));
+            // Add active class to clicked tab
+            this.classList.add("active");
+  
+            // Show corresponding content (Currently hardcoded to show overview only)
+            if (this.id === "overview-tab") {
+              overviewContent.style.display = "flex"; // Show overview content
+            } else {
+              overviewContent.style.display = "none"; // Hide overview content
+            }
+          });
+        });
+  
+        const eligibilityTab = document.getElementById("eligibility-tab");
+        const eligibilitySection = document.getElementById("eligibility-section");
+  
+        // Scroll to Eligibility Section
+        eligibilityTab.addEventListener("click", function () {
+          eligibilitySection.scrollIntoView({ behavior: "smooth" });
+        });
+  
+        const preparationTab = document.getElementById("preparation-tab");
+        const preparationSection = document.getElementById("preparation-section");
+  
+        // Scroll to Preparation Section
+        preparationTab.addEventListener("click", function () {
+          preparationSection.scrollIntoView({ behavior: "smooth" });
+        });
+        const aboutTab = document.getElementById("about-tab");
+        const aboutTreatmentSection = document.getElementById(
+          "about-treatment-section"
+        );
+  
+        // Scroll to About Treatment Section
+        aboutTab.addEventListener("click", function () {
+          aboutTreatmentSection.scrollIntoView({ behavior: "smooth" });
+        });
+        const postCareTab = document.getElementById("post-care-tab");
+        const postTreatmentCareSection = document.getElementById(
+          "post-treatment-care-section"
+        );
+  
+        // Scroll to Post-Treatment Care Section
+        postCareTab.addEventListener("click", function () {
+          postTreatmentCareSection.scrollIntoView({ behavior: "smooth" });
+        });
+        const recoveryTab = document.getElementById("recovery-tab");
+        const recoveryTipsSection = document.getElementById(
+          "recovery-tips-section"
+        );
+  
+        // Scroll to Recovery Tips Section
+        recoveryTab.addEventListener("click", function () {
+          recoveryTipsSection.scrollIntoView({ behavior: "smooth" });
+        });
+        const faqItems = document.querySelectorAll(".faq-item");
+  
+        faqItems.forEach((item) => {
+          const question = item.querySelector(".faq-question");
+          const answer = item.querySelector(".faq-answer");
+          const icon = item.querySelector(".icon");
+  
+          question.addEventListener("click", () => {
+            const isActive = item.classList.contains("active");
+  
+            // Close all active items first
+            faqItems.forEach((faq) => {
+              faq.classList.remove("active");
+              faq.querySelector(".faq-answer").style.maxHeight = null;
+              faq.querySelector(".icon").textContent = "+";
+            });
+  
+            // Open the clicked item
+            if (!isActive) {
+              item.classList.add("active");
+              answer.style.maxHeight = answer.scrollHeight + "px";
+              icon.textContent = "-";
+            }
+          });
+        });
+        // Add carousel functionality (if necessary)
+        const dots = document.querySelectorAll(".dot");
+        dots.forEach((dot, idx) => {
+          dot.addEventListener("click", () => {
+            dots.forEach((d) => d.classList.remove("active"));
+            dot.classList.add("active");
+            // Implement the actual slide change logic if needed
+          });
+        });
+        // Add carousel functionality (if necessary)
+        const doctorDots = document.querySelectorAll(".dot");
+        doctorDots.forEach((dot, idx) => {
+          dot.addEventListener("click", () => {
+            doctorDots.forEach((d) => d.classList.remove("active"));
+            dot.classList.add("active");
+            // Implement the actual slide change logic if needed
+          });
+        });
+        // Add carousel functionality (if necessary)
+        const hospitalDots = document.querySelectorAll(".dot");
+        hospitalDots.forEach((dot, idx) => {
+          dot.addEventListener("click", () => {
+            hospitalDots.forEach((d) => d.classList.remove("active"));
+            dot.classList.add("active");
+            // Implement the actual slide change logic if needed
+          });
+        });
+      </script>
+
+      <script>
+   $(document).ready(function() {
+    var formSection = $('.form-section');
+    var eligibilitySection = $('#eligibility');
+    var faqsSection = $('#faqs');
+
+    // Get the offset positions
+    var eligibilityOffsetTop = eligibilitySection.offset().top;
+    var faqsOffsetBottom = faqsSection.offset().top + faqsSection.outerHeight();
+    
+    // Calculate the form's original position
+    var originalPosition = formSection.offset().top;
+
+    $(window).scroll(function() {
+        var scrollTop = $(window).scrollTop();
+
+        // Check if the scroll position is within the eligible section
+        if (scrollTop >= eligibilityOffsetTop && scrollTop <= (faqsOffsetBottom - formSection.outerHeight())) {
+            formSection.css({
+                position: 'fixed',
+                top: '20px', // Adjust the top position to create space between the top of the window
+                right: '5%', // Adjust the right position to keep the form aligned within the container
+                width: formSection.parent().width() // Keep the form's width same as parent width
+            });
+        } else {
+            // Reset the form position when it scrolls out of the range
+            formSection.css({
+                position: 'relative',
+                top: 'auto',
+                right: 'auto'
+            });
+        }
+    });
+});
+
+      </script>
 </body>
 
 </html>
