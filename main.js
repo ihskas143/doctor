@@ -17,3 +17,11 @@ $(document).ready(function () {
         autoplayHoverPause: true
     });
 });
+
+<script>
+    document.querySelector('.navbar-toggle').addEventListener('click', function() {
+        document.querySelector('.navbar ul').classList.toggle('active')
+    });
+</script>
+
+
